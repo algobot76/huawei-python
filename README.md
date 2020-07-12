@@ -1,1 +1,1 @@
-# huawei-python
+# nowcoder-python
