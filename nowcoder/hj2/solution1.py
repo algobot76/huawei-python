@@ -1,6 +1,10 @@
 from collections import Counter
 
-s = input().strip()
-ch = input().strip()
-c = Counter(s.lower())
-print(c[ch.lower()])
+while True:
+    try:
+        s = input().strip()
+        ch = input().strip()
+        c = Counter(s.lower())
+        print(c[ch.lower()])
+    except:
+        break

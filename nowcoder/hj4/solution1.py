@@ -8,7 +8,11 @@ def print_str(s):
         print(s + "0" * (8 - len(s)))
 
 
-a = input().strip()
-b = input().strip()
-print_str(a)
-print_str(b)
+while True:
+    try:
+        a = input().strip()
+        b = input().strip()
+        print_str(a)
+        print_str(b)
+    except:
+        break
