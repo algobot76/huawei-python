@@ -1,10 +1,8 @@
-from collections import Counter
+import collections
+import sys
 
-while True:
-    try:
-        s = input().strip()
-        ch = input().strip()
-        c = Counter(s.lower())
-        print(c[ch.lower()])
-    except:
-        break
+if __name__ == "__main__":
+    s = sys.stdin.readline().strip()
+    ch = sys.stdin.readline().strip()
+    c = collections.Counter(s.lower())
+    print(c[ch.lower()])

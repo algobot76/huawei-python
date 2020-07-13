@@ -1,3 +1,6 @@
+import sys
+
+
 def print_str(s):
     if len(s) <= 8:
         print(s + "0" * (8 - len(s)))
@@ -8,11 +11,8 @@ def print_str(s):
         print(s + "0" * (8 - len(s)))
 
 
-while True:
-    try:
-        a = input().strip()
-        b = input().strip()
-        print_str(a)
-        print_str(b)
-    except:
-        break
+if __name__ == "__main__":
+    a = sys.stdin.readline().strip()
+    b = sys.stdin.readline().strip()
+    print_str(a)
+    print_str(b)

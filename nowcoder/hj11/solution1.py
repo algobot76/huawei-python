@@ -1,5 +1,4 @@
-while True:
-    try:
-        print(input()[::-1])
-    except:
-        break
+import sys
+
+if __name__ == "__main__":
+    print(sys.stdin.readline().strip()[::-1])
