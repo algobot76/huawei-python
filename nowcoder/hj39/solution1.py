@@ -42,7 +42,7 @@ def is_legal_mask(mask):
         return False
 
     bin_mask = "".join(
-        [format(int(segment), 'b') for segment in mask.split(".")])
+        [format(int(segment), 'b').zfill(8) for segment in mask.split(".")])
     first_zero_idx = bin_mask.find("0")
     last_one_idx = bin_mask.rfind("1")
     if first_zero_idx == -1 or last_one_idx == -1:
