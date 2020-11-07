@@ -23,18 +23,14 @@ while True:
         else:
             print(-1)
 
-
         def is_valid_r(i):
             return i in range(0, r)
-
 
         def is_valid_c(j):
             return j in range(0, c)
 
-
         def is_valid(i, j):
             return is_valid_r(i) and is_valid_c(j)
-
 
         if is_valid(r1, c1) and is_valid(r2, c2):
             print(0)
